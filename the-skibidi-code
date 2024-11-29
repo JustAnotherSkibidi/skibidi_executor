@@ -1,0 +1,608 @@
+-- CODED BY TRISTAN I USED PLUGIN KIND OF LOL
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ExploitGUI = Instance.new("ScreenGui")
+local Button = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Back = Instance.new("Frame")
+local Menu = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Options = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local FLY = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local INVISIBLE = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Menus = Instance.new("Folder")
+local _1 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local INFO = Instance.new("TextLabel")
+local Arrow = Instance.new("ImageLabel")
+local Teleport = Instance.new("Frame")
+local ChosenUSER = Instance.new("TextBox")
+local UICorner_8 = Instance.new("UICorner")
+local INFO_2 = Instance.new("TextLabel")
+local FakeFrame = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Close = Instance.new("ImageButton")
+local UICorner_10 = Instance.new("UICorner")
+local TITLE = Instance.new("TextLabel")
+
+--Properties:
+
+ExploitGUI.Name = "ExploitGUI"
+ExploitGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ExploitGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Button.Name = "Button"
+Button.Parent = ExploitGUI
+Button.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.867326736, 0, 0.457044661, 0)
+Button.Size = UDim2.new(0.115841582, 0, 0.0670103058, 0)
+Button.Font = Enum.Font.Code
+Button.FontFace.Bold = true
+Button.Text = "OPEN"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = Button
+
+Back.Name = "Back"
+Back.Parent = ExploitGUI
+Back.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Back.BackgroundTransparency = 1.000
+Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Back.BorderSizePixel = 0
+Back.Position = UDim2.new(0.5, 0, 0.5, 0)
+
+Menu.Name = "Menu"
+Menu.Parent = Back
+Menu.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Menu.BorderSizePixel = 0
+Menu.Size = UDim2.new(1, 0, 1, 0)
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+UICorner_2.Parent = Menu
+
+Options.Name = "Options"
+Options.Parent = Menu
+Options.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Options.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Options.BorderSizePixel = 0
+Options.Position = UDim2.new(0.0249554366, 0, 0.116666727, 0)
+Options.Size = UDim2.new(0.212121218, 0, 0.836666763, 0)
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = Options
+
+ESP.Name = "ESP"
+ESP.Parent = Options
+ESP.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ESP.BorderColor3 = Color3.fromRGB(22, 22, 22)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.053132385, 0, 0.0297162179, 0)
+ESP.Size = UDim2.new(0.882352948, 0, 0.10358566, 0)
+ESP.Font = Enum.Font.Code
+ESP.FontFace.Bold = true
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 150, 150)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 10)
+UICorner_4.Parent = ESP
+
+FLY.Name = "FLY"
+FLY.Parent = Options
+FLY.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+FLY.BorderColor3 = Color3.fromRGB(22, 22, 22)
+FLY.BorderSizePixel = 0
+FLY.Position = UDim2.new(0.0529999994, 0, 0.165000007, 0)
+FLY.FontFace.Bold = true
+FLY.Size = UDim2.new(0.882352948, 0, 0.10358566, 0)
+FLY.Font = Enum.Font.Code
+FLY.Text = "FLY"
+FLY.TextColor3 = Color3.fromRGB(255, 150, 150)
+FLY.TextScaled = true
+FLY.TextSize = 14.000
+FLY.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = FLY
+
+INVISIBLE.Name = "INVISIBLE"
+INVISIBLE.Parent = Options
+INVISIBLE.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+INVISIBLE.BorderColor3 = Color3.fromRGB(22, 22, 22)
+INVISIBLE.BorderSizePixel = 0
+INVISIBLE.Position = UDim2.new(0.0529999994, 0, 0.296999991, 0)
+INVISIBLE.Size = UDim2.new(0.882352948, 0, 0.10358566, 0)
+INVISIBLE.Font = Enum.Font.Code
+INVISIBLE.Text = "INVISIBLE"
+INVISIBLE.FontFace.Bold = true
+INVISIBLE.TextColor3 = Color3.fromRGB(255, 150, 150)
+INVISIBLE.TextScaled = true
+INVISIBLE.TextSize = 14.000
+INVISIBLE.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = INVISIBLE
+
+Menus.Name = "Menus"
+Menus.Parent = Menu
+
+_1.Name = "1"
+_1.Parent = Menus
+_1.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1.BorderSizePixel = 0
+_1.Position = UDim2.new(0.261999935, 0, 0.116999984, 0)
+_1.Size = UDim2.new(0.713012457, 0, 0.836666763, 0)
+
+UICorner_7.CornerRadius = UDim.new(0, 10)
+UICorner_7.Parent = _1
+
+INFO.Name = "INFO"
+INFO.Parent = _1
+INFO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFO.BackgroundTransparency = 1.000
+INFO.BorderColor3 = Color3.fromRGB(0, 0, 0)
+INFO.BorderSizePixel = 0
+INFO.Position = UDim2.new(0.119999997, 0, 0.027888447, 0)
+INFO.Size = UDim2.new(0.75999999, 0, 0.105015121, 0)
+INFO.Font = Enum.Font.SourceSansBold
+INFO.FontFace.Bold = true
+INFO.Text = "INFO: TO FLY PRESS SPACE"
+INFO.TextColor3 = Color3.fromRGB(255, 255, 255)
+INFO.TextScaled = true
+INFO.TextSize = 14.000
+INFO.TextWrapped = true
+
+Arrow.Name = "Arrow"
+Arrow.Parent = _1
+Arrow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arrow.BackgroundTransparency = 1.000
+Arrow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Arrow.BorderSizePixel = 0
+Arrow.Position = UDim2.new(-0.00142608641, 0, 0.0956175327, 0)
+Arrow.Size = UDim2.new(0.262499988, 0, 0.239043832, 0)
+Arrow.Image = "rbxassetid://108953838814613"
+
+Teleport.Name = "Teleport"
+Teleport.Parent = _1
+Teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.BackgroundTransparency = 1.000
+Teleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Teleport.BorderSizePixel = 0
+Teleport.Position = UDim2.new(-0.00249999994, 0, 0.529880464, 0)
+Teleport.Size = UDim2.new(1.00250006, 0, 0.466135472, 0)
+
+ChosenUSER.Name = "ChosenUSER"
+ChosenUSER.Parent = Teleport
+ChosenUSER.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ChosenUSER.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChosenUSER.BorderSizePixel = 0
+ChosenUSER.Position = UDim2.new(0.262916595, 0, 0.62835902, 0)
+ChosenUSER.Size = UDim2.new(0.468827903, 0, 0.307692319, 0)
+ChosenUSER.Font = Enum.Font.Code
+ChosenUSER.PlaceholderText = "USER HERE"
+ChosenUSER.Text = ""
+ChosenUSER.FontFace.Bold = true
+ChosenUSER.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChosenUSER.TextScaled = true
+ChosenUSER.TextSize = 14.000
+ChosenUSER.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 10)
+UICorner_8.Parent = ChosenUSER
+
+INFO_2.Name = "INFO"
+INFO_2.Parent = Teleport
+INFO_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFO_2.BackgroundTransparency = 1.000
+INFO_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+INFO_2.BorderSizePixel = 0
+INFO_2.Position = UDim2.new(0.311720669, 0, 0.350427359, 0)
+INFO_2.Size = UDim2.new(0.379052341, 0, 0.188034192, 0)
+INFO_2.Font = Enum.Font.Code
+INFO_2.FontFace.Bold = true
+INFO_2.Text = "Teleport to:"
+INFO_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+INFO_2.TextScaled = true
+INFO_2.TextSize = 14.000
+INFO_2.TextWrapped = true
+
+FakeFrame.Name = "FakeFrame"
+FakeFrame.Parent = Menu
+FakeFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+FakeFrame.BackgroundTransparency = 1.000
+FakeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FakeFrame.BorderSizePixel = 0
+FakeFrame.Size = UDim2.new(1, 0, 1, 0)
+FakeFrame.ZIndex = 5
+
+UICorner_9.CornerRadius = UDim.new(0, 10)
+UICorner_9.Parent = FakeFrame
+
+Close.Name = "Close"
+Close.Parent = Back
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.896613181, 0, 0.0299999528, 0)
+Close.Size = UDim2.new(0.0766488388, 0, 0.0300000031, 0)
+Close.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Close.ImageTransparency = 1.000
+
+UICorner_10.CornerRadius = UDim.new(0, 10)
+UICorner_10.Parent = Close
+
+TITLE.Name = "TITLE"
+TITLE.Parent = Back
+TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.BackgroundTransparency = 1.000
+TITLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TITLE.BorderSizePixel = 0
+TITLE.Position = UDim2.new(0.237076655, 0, 0, 0)
+TITLE.Size = UDim2.new(0.524064183, 0, 0.0933333337, 0)
+TITLE.Font = Enum.Font.GothamBold
+TITLE.Text = "Tristan's Troll UI"
+TITLE.FontFace.Bold = true
+TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.TextScaled = true
+TITLE.TextSize = 14.000
+TITLE.TextWrapped = true
+
+--- CODE YAHOO
+
+local TweenService = game:GetService("TweenService")
+local PLR = game.Players.LocalPlayer
+local INVISIBLE_VALUE = false
+local DIST_PER_BUTTON = 132 -- ignore
+
+-- CODED BY TRISTAN YAHOOOOOOOOOO
+
+--- IGNORE OPEN UI AND UI DRAG
+local Debounce = true
+local Debounce2 = true
+Button.MouseButton1Click:Connect(function()
+	if Debounce == false then
+		local SIZE, POS = UDim2.new(0,0,0,0), UDim2.new(0.5,0,0.5,0)
+		TweenService:Create(Back, TweenInfo.new(0.25,Enum.EasingStyle.Quad),{Position = POS, Size = SIZE}):Play()
+		Back.Interactable = false
+		Debounce = true
+		Button.Text = "OPEN"
+	else
+		local SIZE, POS = UDim2.new(0.555, 0,0.515, 0), UDim2.new(0.222, 0,0.242, 0)
+		TweenService:Create(Back, TweenInfo.new(0.25,Enum.EasingStyle.Quad),{Position = POS, Size = SIZE}):Play()
+		Back.Interactable = true
+		Debounce = false
+		Button.Text = "CLOSE"
+	end
+end)
+local TWEEN_INFO = TweenInfo.new(0.25,Enum.EasingStyle.Quad)
+Close.MouseButton1Click:Connect(function()
+	if Debounce2 == true then
+		local SIZE, POS = UDim2.new(1,0,0.1,0), UDim2.new(0,0,0,0)
+		TweenService:Create(Menu,TWEEN_INFO,{Position = POS, Size = SIZE}):Play()
+		TweenService:Create(FakeFrame,TWEEN_INFO,{BackgroundTransparency = 0}):Play()
+		Menu.Interactable = false
+		Debounce2 = false
+	else
+		local SIZE, POS = UDim2.new(1,0,1,0), UDim2.new(0,0,0,0)
+		TweenService:Create(Menu,TWEEN_INFO,{Position = POS, Size = SIZE}):Play()
+		TweenService:Create(FakeFrame,TWEEN_INFO,{BackgroundTransparency = 1}):Play()
+		Menu.Interactable = true
+		Debounce2 = true
+	end
+end)
+
+local UIS = game:GetService('UserInputService')
+local dragToggle = nil
+local dragSpeed = 0.25
+local dragStart = nil
+local startPos = nil
+
+local function updateInput(input)
+	local delta = input.Position - dragStart
+	local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	game:GetService('TweenService'):Create(Back, TweenInfo.new(dragSpeed), {Position = position}):Play()
+end
+
+Back.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+		dragToggle = true
+		dragStart = input.Position
+		startPos = Back.Position
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragToggle = false
+			end
+		end)
+	end
+end)
+
+UIS.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		if dragToggle then
+			updateInput(input)
+		end
+	end
+end)
+--- IGNORE OPEN UI AND UI DRAG
+
+function TweenColor(TEXTLABEL, COLOR) TweenService:Create(TEXTLABEL, TweenInfo.new(0.25, Enum.EasingStyle.Quad), {TextColor3 = COLOR}):Play() end
+
+-- ESP CODE
+
+local ESP_VALUE = false
+
+local BEAM_COLOR = ColorSequence.new({
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0))
+})
+
+function CREATE_BEAM(TORSO,E_TORSO)
+	local Beam = Instance.new("Beam",workspace)
+	Beam.Color = BEAM_COLOR
+	Beam.LightEmission = 1
+	Beam.LightInfluence = 1
+	Beam.Width0 = 0.25
+	Beam.Width1 = 0.25
+	Beam.FaceCamera = true
+	Beam.Name = "ESP_"..PLR.Name
+	local Attach1 = Instance.new("Attachment",TORSO) Attach1.Name = "ESP_"..PLR.Name
+	local Attach2 = Instance.new("Attachment",E_TORSO) Attach2.Name = "ESP_"..PLR.Name
+	Beam.Attachment0 = Attach1
+	Beam.Attachment1 = Attach2
+	local Highlight = Instance.new("Highlight",E_TORSO.Parent)
+	Highlight.Name = "ESP_"..PLR.Name
+end
+
+local TargetClasses = {"Attachment","Highlight","Beam"}
+function DESTROY_BEAM()
+	for i,v in pairs(workspace:GetDescendants()) do
+		if table.find(TargetClasses,v.ClassName) and v.Name == "ESP_"..PLR.Name then
+			v:Destroy()
+		end
+	end
+end
+
+function GET_HUMANOIDS()
+	if ESP_VALUE == false then TweenColor(ESP, Color3.fromRGB(107, 255, 137))
+		ESP_VALUE = true
+		task.spawn(function() repeat
+				for i,v in pairs(workspace:GetDescendants()) do
+					local HIGHLIGHT = v.Parent:FindFirstChildOfClass("Highlight")
+					local HUM = v.Parent:FindFirstChildOfClass("Humanoid")
+					local NAME = v.Name
+					if NAME == "Humanoid" and v.Parent.Name ~= PLR.Name and HUM and not HIGHLIGHT then
+						local TORSO,E_TORSO = PLR.Character:FindFirstChild("Torso"),v.Parent.PrimaryPart
+						CREATE_BEAM(TORSO,E_TORSO)
+					end
+				end
+				task.wait(1)
+			until ESP_VALUE == false end)
+	else TweenColor(ESP, Color3.fromRGB(255, 150, 150))
+		ESP_VALUE = false
+		DESTROY_BEAM()
+	end
+end
+
+ESP.MouseButton1Click:Connect(GET_HUMANOIDS)
+
+-- ESP CODE
+-------------------------------------------------------------------------------- 👍
+-- FLYING CODE
+
+local FLY_VALUE = false
+local INPUT_VALUE = false
+
+FLY.MouseButton1Click:Connect(function()
+	if INVISIBLE_VALUE == true then VISIBILITY() end
+	INVISIBLE_VALUE = false
+	TweenColor(Options:FindFirstChild("INVISIBLE"), Color3.fromRGB(255, 150, 150))
+	local CHAR = PLR.Character
+	local HRM = CHAR:FindFirstChild("Humanoid").RootPart
+	if FLY_VALUE == false then TweenColor(FLY, Color3.fromRGB(107, 255, 137))
+		FLY_VALUE = true
+		INPUT_VALUE = false
+	else TweenColor(FLY, Color3.fromRGB(255, 150, 150))
+		FLY_VALUE = false
+		INPUT_VALUE = false
+		HRM.Anchored = false
+	end
+end)
+
+local RunService = game:GetService("RunService")
+local UIS = game:GetService("UserInputService")
+local Speed = 2.5
+
+function FLIGHT(key)
+	local CHAR = PLR.Character
+	local HRM = CHAR:FindFirstChild("Humanoid").RootPart
+	if CHAR:FindFirstChild("Humanoid") then
+		-- FRONT SIDE BACK KEYS
+		if key == "W" then HRM.CFrame = (HRM.CFrame * CFrame.new(0,0,-Speed))
+		elseif key == "A" then HRM.CFrame = (HRM.CFrame * CFrame.new(-Speed,0,0))
+		elseif key == "S" then HRM.CFrame = (HRM.CFrame * CFrame.new(0,0,Speed))
+		elseif key == "D" then HRM.CFrame = (HRM.CFrame * CFrame.new(Speed,0,0))
+			-- UP AND DOWN KEYS
+		elseif key == "E" then HRM.CFrame = (HRM.CFrame * CFrame.new(0,Speed,0))
+		elseif key == "Q" then HRM.CFrame = (HRM.CFrame * CFrame.new(0,-Speed,0))
+		end
+	end
+end
+
+function KEY_PRESS()
+	-- FRONT SIDE BACK KEYS
+	if UIS:IsKeyDown("W") then FLIGHT("W") end
+	if UIS:IsKeyDown("A") then FLIGHT("A") end
+	if UIS:IsKeyDown("S") then FLIGHT("S") end
+	if UIS:IsKeyDown("D") then FLIGHT("D") end
+	-- UP AND DOWN KEYS
+	if UIS:IsKeyDown("E") then FLIGHT("E") end
+	if UIS:IsKeyDown("Q") then FLIGHT("Q") end
+end
+
+function FACE_CAM()
+	local CAMERA = workspace.CurrentCamera
+	if FLY_VALUE == true and INPUT_VALUE == true then
+		local CHAR = PLR.Character
+		local HRM = CHAR:FindFirstChild("Humanoid").RootPart
+		local CAMERA_POS = CFrame.new(workspace.CurrentCamera.CFrame.Position) -- CHAR:FindFirstChild("Humanoid").CameraOffset)
+		local CAMERA_CFRAME = CAMERA_POS * CAMERA.CFrame - CAMERA.CFrame.Position
+		local lookVector = CAMERA_CFRAME.LookVector
+
+		local TARGET = CFrame.new(HRM.CFrame.Position, HRM.CFrame.Position + 
+			Vector3.new(lookVector.X, lookVector.Y, lookVector.Z))
+
+		HRM.CFrame = TARGET
+	end
+end
+task.spawn(function()
+	while true do task.wait()
+		if FLY_VALUE == true and INPUT_VALUE == true then
+			local CHAR = PLR.Character
+			if CHAR:FindFirstChild("Humanoid") then
+				KEY_PRESS()
+			end
+		end
+	end
+end)
+
+RunService.RenderStepped:Connect(function()
+	if FLY_VALUE == true and INPUT_VALUE == true then
+		local CHAR = PLR.Character
+		if CHAR:FindFirstChild("Humanoid") then
+			FACE_CAM()
+		end
+	end
+end)
+
+UIS.InputBegan:Connect(function(key)
+	local CHAR = PLR.Character
+	local HRM = CHAR:FindFirstChild("Humanoid").RootPart
+	if key.KeyCode == Enum.KeyCode.Space then
+		if FLY_VALUE == true then
+			if INPUT_VALUE == true then
+				INPUT_VALUE = false
+				HRM.Anchored = false
+			else
+				INPUT_VALUE = true
+				HRM.Anchored = true
+			end
+		end
+	end
+end)
+
+-- FLYING CODE
+-------------------------------------------------------------------------------- 👍
+-- INVISIBLE CODE
+
+local OFFSET = 1000
+local OLD_Y = nil
+
+local CAM = workspace.CurrentCamera
+
+function GET_FAKECHAR(CHAR)
+	local MODEL = Instance.new("Model",workspace)
+	MODEL.Name = "FAKE_CHAR"
+	local HUM = Instance.new("Humanoid",MODEL)
+	for i,v in pairs(CHAR:GetChildren()) do
+		if v:IsA("BasePart") then
+			local CLONE = v:Clone()
+			CLONE.Parent = MODEL
+			CLONE.Anchored = true
+			CLONE.CanCollide = false
+			if v.Name == CHAR.PrimaryPart.Name then
+				MODEL.PrimaryPart = CLONE
+			end
+			for i,v in pairs(CLONE:GetChildren()) do v:Destroy() end
+		end
+	end
+	return MODEL
+end
+
+local WALK_PART = nil
+local FAKE_CHAR = nil
+function VISIBILITY() FLY_VALUE = false INPUT_VALUE = false
+	TweenColor(FLY, Color3.fromRGB(255, 150, 150))
+	local CHAR = PLR.Character
+	local HUM = CHAR:FindFirstChildOfClass("Humanoid")
+	if HUM then else return end
+	if INVISIBLE_VALUE == false then TweenColor(INVISIBLE, Color3.fromRGB(107, 255, 137))
+		CHAR:PivotTo(CHAR.PrimaryPart.CFrame * CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)))
+		INVISIBLE_VALUE = true
+		--HUM.CameraOffset = Vector3.new(0,-OFFSET,0)
+		WALK_PART = Instance.new("Part",workspace)
+		WALK_PART.Anchored = true
+		WALK_PART.Size = Vector3.new(10000,0.5,10000)
+		WALK_PART.CanQuery = false
+		WALK_PART.CastShadow = false
+		WALK_PART.Transparency = 1 -- what the sigma
+		WALK_PART.Position = HUM.RootPart.Position + Vector3.new(0,OFFSET-3.5,0)
+		OLD_Y = HUM.RootPart.Position.Y
+		CHAR:PivotTo(CFrame.new(HUM.RootPart.CFrame.Position + Vector3.new(0,OFFSET,0)))
+		-- CREATION OF FAKE CHAR
+		FAKE_CHAR = GET_FAKECHAR(CHAR)
+		CAM.CameraSubject = FAKE_CHAR.Humanoid
+		--CHAR.PrimaryPart = FAKE_CHAR:FindFirstChild("HumanoidRootPart")
+		task.spawn(function()
+			repeat task.wait()
+				for i,v in pairs(FAKE_CHAR:GetChildren()) do
+					if v:IsA("BasePart") then
+						local COUNTER_PART = CHAR:FindFirstChild(v.Name)
+						local OFFSET = COUNTER_PART.Position + Vector3.new(0,-OFFSET,0)
+						v.Position = OFFSET
+						v.Orientation = COUNTER_PART.Orientation
+					end
+				end
+			until INVISIBLE_VALUE == false end)
+		-- END OF FAKE CHAR
+	else TweenColor(INVISIBLE, Color3.fromRGB(255, 150, 150))
+		CHAR:PivotTo(CHAR.PrimaryPart.CFrame * CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)))
+		INVISIBLE_VALUE = false
+		FAKE_CHAR:Destroy()
+		WALK_PART:Destroy()
+		CHAR:PivotTo(CFrame.new(HUM.RootPart.Position.X, OLD_Y, HUM.RootPart.Position.Z))
+		CAM.CameraSubject = HUM
+		--CHAR.PrimaryPart = CHAR:FindFirstChild("HumanoidRootPart")
+	end
+	HUM.RootPart.Anchored = false
+end
+
+INVISIBLE.MouseButton1Click:Connect(VISIBILITY)
+
+-- INVISIBLE CODE
+-------------------------------------------------------------------------------- 👍
+-- TELEPORT CODE
+
+ChosenUSER.FocusLost:Connect(function()
+	local TEXT = ChosenUSER.Text
+	local PLAYERS = game:GetService("Players")
+	local MORE = 0
+	for i,v in pairs(PLAYERS:GetChildren()) do
+		if string.find(v.Name:lower(),TEXT:lower()) then
+			PLR.Character:PivotTo(v.Character.Torso.CFrame * CFrame.new(0,0,-5))
+			MORE += 1
+		end
+	end
+	if MORE >= 2 then ChosenUSER.Text = "" return end
+	ChosenUSER.Text = ""
+end)
